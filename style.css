@@ -1,0 +1,266 @@
+                                     /* HERO PART */
+.hero {
+      background: url('Gallery/Home.jpg') ;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .search-box {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .hero h1 {
+      font-weight: bold;
+    }
+
+    .navbar {
+      background: rgba(139, 185, 236, 0.9);
+    }
+
+    .gd-mrg{
+        text-align: left;
+    }
+    .lead-txt{
+         font-weight: 500;
+         font-size: 1.4rem;
+         text-align: left;
+    }
+
+   .search-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .search-icon {
+      background-color: #00AEEF;
+      color: white;
+      border-radius: 50%;
+      padding: 10px 15px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-control::placeholder {
+      color: #aaa;
+    }
+    .background{
+        border-radius: 50%;
+        background-color: #00AEEF;
+    }
+
+/* 2ND PART START  */
+    .icon-box {
+      background-color: #e6f7ff;
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 24px;
+      color: #00aaff;
+    }
+    .why-box h5 {
+      font-weight: 600;
+    }
+    .why-box p {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+/* 3RD PART START (OUR PARTNERS)  */
+    .partner-logo {
+      max-height: 60px;
+      filter: grayscale(100%);
+      transition: all 0.3s ease;
+    }
+    .partner-logo:hover {
+      filter: none;
+      transform: scale(1.05);
+    }
+    .partners-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .partner-item {
+      margin: 20px;
+    }
+
+ /* 4TH PART START (TOP BOOK NOW)  */
+
+     .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .rating-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #000;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    .location {
+      font-size: 0.9rem;
+      color: gray;
+    }
+    .card-body h5 {
+      font-weight: 600;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000;
+    }
+
+
+ /* 5TH PART START (EXPLORE MALDIVE)   */
+   /* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.maldive {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem;
+  background: url('images/IMG-20250621-WA0024.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.maldive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+/* Ensure content appears above the overlay */
+.maldive > * {
+  position: relative;
+  z-index: 2;
+}
+.maldive .primary{
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding:2rem 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2rem;
+}
+.maldive.secondary{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+.maldive .secondary .left p{
+    width: 90%;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.maldive .secondary button{
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.maldive .secondary .right{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.maldive.secondary .right .card{
+    width: 30%;
+    height: 230px;
+}
+
+.maldive .secondary .right .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.maldive .secondary .right .card p{
+    font-size:1rem;
+    color: #fff;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .maldive {
+    padding: 2rem;
+    height: auto; /* Let it grow based on content */
+  }
+
+  .maldive.primary {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .maldive .secondary {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .maldive .secondary .left p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .maldive .secondary button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .maldive .secondary .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .maldive .secondary .right .card {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+.maldive .secondary .right .card img {
+    height: 200px;
+  }
+}
+    
